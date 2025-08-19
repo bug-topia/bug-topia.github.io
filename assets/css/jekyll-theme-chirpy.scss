@@ -9,3 +9,15 @@
 ';
 
 /* append your custom style below */
+mark.dynamic-highlight {
+  background: linear-gradient(var(--bs-highlight-bg), var(--bs-highlight-bg));
+  background-size: 0% 45%;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 1.5s ease-out;
+  color: inherit;
+  
+  &.dynamic-highlight-visible {
+    background-size: 100% 45%;
+  }
+}
