@@ -21,3 +21,33 @@ mark.dynamic-highlight {
     background-size: 100% 45%;
   }
 }
+
+main h2 {
+  border-left: 4px solid var(--heading-color);
+  padding-left: .5rem;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+}
+
+main h3 {
+  border-left: 2px solid var(--heading-color);
+  border-bottom: 1px solid var(--heading-color);
+  padding-left: .5rem;
+  padding-bottom: .25rem;
+  padding-top: .25rem;
+}
+
+main h4 {
+  border-bottom: 2px solid var(--heading-color);
+  padding-bottom: .25rem;
+}
+
+main h5 {
+  border-bottom: 1px dashed var(--heading-color);
+  padding-bottom: .25rem;
+}
+
+main u.wavy {
+  text-underline-position: under;
+  text-decoration-style: wavy;
+}
