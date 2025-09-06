@@ -26,6 +26,14 @@ math: true
 이제 **삽입**이라 불리는 이유를 아시겠나요? 키를 뽑아서 기존 정렬된 구간 사이에 끼워 넣기 때문에 그렇습니다. 비교하여 밀어내는 것이 핵심입니다.
 
 ### 코드 예시
+
+<div class="code-tabs" markdown="0">
+    <div class="code-tab active" onclick="showCode('cpp')">C++</div>
+    <div class="code-tab" onclick="showCode('java')">JAVA</div>
+</div>
+
+{::options parse_block_html="true" /}
+<div id="code-cpp" class="code-block active">
 ```cpp
 #include <iostream>
 
@@ -67,7 +75,10 @@ int main(int argc, char* argv[]) {
     return 0;
 }
 ```
+</div>
 
+{::options parse_block_html="true" /}
+<div id="code-java" class="code-block">
 ```java
 public class Main {
     /**
@@ -108,6 +119,7 @@ public class Main {
     }
 }
 ```
+</div>
 
 > 내림차순으로 정렬하려면 `arr[j] > key`를 `arr[j] < key`로 변경하면 됩니다.
 {: .prompt-tip }
