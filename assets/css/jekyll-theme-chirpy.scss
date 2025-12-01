@@ -10,7 +10,10 @@
 
 /* append your custom style below */
 mark.dynamic-highlight {
-  background: linear-gradient(var(--bs-highlight-bg), var(--bs-highlight-bg));
+  background: linear-gradient(
+    var(--checkbox-checked-color),
+    var(--checkbox-checked-color)
+  );
   background-size: 0% 45%;
   background-repeat: no-repeat;
   background-position: left bottom;
