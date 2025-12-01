@@ -16,7 +16,7 @@ mark.dynamic-highlight {
   background-position: left bottom;
   transition: background-size 1.5s ease-out;
   color: inherit;
-  
+
   &.dynamic-highlight-visible {
     background-size: 100% 45%;
   }
@@ -24,27 +24,27 @@ mark.dynamic-highlight {
 
 main h2 {
   border-left: 4px solid var(--heading-color);
-  padding-left: .5rem;
-  padding-top: .25rem;
-  padding-bottom: .25rem;
+  padding-left: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 main h3 {
   border-left: 2px solid var(--heading-color);
   border-bottom: 1px solid var(--heading-color);
-  padding-left: .5rem;
-  padding-bottom: .25rem;
-  padding-top: .25rem;
+  padding-left: 0.5rem;
+  padding-bottom: 0.25rem;
+  padding-top: 0.25rem;
 }
 
 main h4 {
   border-bottom: 2px solid var(--heading-color);
-  padding-bottom: .25rem;
+  padding-bottom: 0.25rem;
 }
 
 main h5 {
   border-bottom: 1px dashed var(--heading-color);
-  padding-bottom: .25rem;
+  padding-bottom: 0.25rem;
 }
 
 main u.wavy {
@@ -54,72 +54,71 @@ main u.wavy {
 
 .code-tabs {
   display: flex;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 .code-tab {
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   cursor: pointer;
   border-bottom: 2px solid color-mix(in srgb, lightgray 30%, transparent 0%);
-  transition: border-bottom .5s ease-out;
+  transition: border-bottom 0.5s ease-out;
 }
 .code-tab.active {
   border-bottom: 2px solid var(--heading-color);
   font-weight: 700;
 }
-.code-block { display: none; }
-.code-block.active { display: block; }
+.code-block {
+  display: none;
+}
+.code-block.active {
+  display: block;
+}
 
 main ol.large-numbers {
-  counter-reset:li;
-  margin-left:0;
-  padding-left:0;
+  counter-reset: li;
+  margin-left: 0;
+  padding-left: 0;
   line-height: 1.25;
 }
 main ol.large-numbers > li {
-  position:relative;
-  list-style:none;
+  position: relative;
+  list-style: none;
   margin: 1rem 0 1rem 2rem;
   padding: 0 0 0 1rem;
 }
 main ol.large-numbers > li:before {
-  content:counter(li);
-  counter-increment:li;
-  position:absolute;
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
   top: -0.3em;
-  left:-0.9em;
+  left: -0.9em;
   width: 1em;
-  text-align:center;
-  -moz-box-sizing:border-box;
-  -webkit-box-sizing:border-box;
-  box-sizing:border-box;
+  text-align: center;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 2em;
   font-weight: bold;
   font-weight: 700;
-  color: #A8CABA;
-  text-shadow:
-       3px 3px 0 #838689,
-     -1px -1px 0 #838689,  
-      1px -1px 0 #838689,
-      -1px 1px 0 #838689,
-       1px 1px 0 #838689;
-  transition: color .25s;
+  color: #a8caba;
+  text-shadow: 3px 3px 0 #838689, -1px -1px 0 #838689, 1px -1px 0 #838689,
+    -1px 1px 0 #838689, 1px 1px 0 #838689;
+  transition: color 0.25s;
 }
 main ol.large-numbers li:hover:before {
-  color: #EBE3AA;
+  color: #ebe3aa;
 }
 
 main .blur-hover {
   filter: blur(4px);
-  transition: filter .25s;
+  transition: filter 0.25s;
 }
 main .blur-hover:hover {
-  filter: blur(0)
+  filter: blur(0);
 }
 
-
-
-
-
+.focus-font {
+  font-family: cursive;
+}
 
 .annotation {
   position: relative;
@@ -133,11 +132,11 @@ main .blur-hover:hover {
   transform: translateX(-50%);
   background-color: var(--sidebar-bg);
   color: var(--text-color);
-  padding: .25rem .5rem;
+  padding: 0.25rem 0.5rem;
   border: 1px solid var(--sidebar-border-color);
   opacity: 0;
   pointer-events: none;
-  transition: opacity .23s;
+  transition: opacity 0.23s;
   z-index: 100;
   width: 196px;
   font-size: 0.875rem;
