@@ -78,41 +78,6 @@ main u.wavy {
   display: block;
 }
 
-main ol.large-numbers {
-  counter-reset: li;
-  margin-left: 0;
-  padding-left: 0;
-  line-height: 1.25;
-}
-main ol.large-numbers > li {
-  position: relative;
-  list-style: none;
-  margin: 1rem 0 1rem 2rem;
-  padding: 0 0 0 1rem;
-}
-main ol.large-numbers > li:before {
-  content: counter(li);
-  counter-increment: li;
-  position: absolute;
-  top: -0.3em;
-  left: -0.9em;
-  width: 1em;
-  text-align: center;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: 2em;
-  font-weight: bold;
-  font-weight: 700;
-  color: #a8caba;
-  text-shadow: 3px 3px 0 #838689, -1px -1px 0 #838689, 1px -1px 0 #838689,
-    -1px 1px 0 #838689, 1px 1px 0 #838689;
-  transition: color 0.25s;
-}
-main ol.large-numbers li:hover:before {
-  color: #ebe3aa;
-}
-
 main .blur-hover {
   filter: blur(4px);
   transition: filter 0.25s;
@@ -123,6 +88,34 @@ main .blur-hover:hover {
 
 .focus-font {
   font-family: cursive;
+}
+
+main samp {
+  display: block;
+  padding: 1rem 1.2rem;
+  margin: 1.2rem 0;
+  border-radius: 10px;
+  font-family: inherit;
+  white-space: pre;
+  line-height: 1.55;
+  font-size: 0.95rem;
+
+  background: linear-gradient(
+    180deg,
+    var(--sidebar-bg) 0%,
+    var(--sidebar-bg) 100%
+  );
+  color: var(--text-color);
+
+  border: 1px solid var(--sidebar-border-color);
+}
+
+/* 모바일 대응 */
+@media (max-width: 480px) {
+  main samp {
+    padding: 0.9rem 1rem;
+    font-size: 0.9rem;
+  }
 }
 
 .annotation {
