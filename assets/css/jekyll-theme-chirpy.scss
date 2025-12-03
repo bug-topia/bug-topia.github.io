@@ -9,10 +9,12 @@
 ';
 
 /* append your custom style below */
+@import 'github-alerts.css';
+
 mark.dynamic-highlight {
   background: linear-gradient(
-    var(--checkbox-checked-color),
-    var(--checkbox-checked-color)
+    var(--footnote-target-bg),
+    var(--footnote-target-bg)
   );
   background-size: 0% 45%;
   background-repeat: no-repeat;
